@@ -1,5 +1,3 @@
-# EVERYTHING HERE IS DEPRECATED
-
 # Remote editing on Vesta
 
 Brief overview of your options for editing code on Vesta, with details on how to use the remote editing features of two popular editors.
@@ -7,23 +5,26 @@ Brief overview of your options for editing code on Vesta, with details on how to
 One of the following methods
 
 1. Edit a repo locally and push it to GitHub, then pull it on Vesta. This is the "brute force" method, but works just fine.
-1. Configure your editor to connect to Vesta via SSH and edit files directly on the server. More elegant, but requires an internet connection and is more difficult to set up.
+2. Use an SFTP client that support remote editing like Fetch (Mac Cornell site license), Bitvise [Windows], Filezilla? (free), or Forklift (Mac).
+1. Configure your editor to connect to Vesta via SSH and edit files directly on the server. More elegant, but requires an internet connection and is more difficult to set up. **Except with BBEdit, where it is a built in feature**
 
 ## A brief history of the editor wars
 
 [Editor wars](https://en.wikipedia.org/wiki/Editor_war) have been going on for a long time, mostly between two programs called Emacs and Vim. Both are still full-featured command line editors that have impressive communities. We assume you won't be using Emacs or Vim, though, because the learning curve is very steep for both, and more modern editors also have impressive communities with good features (but don't tell the Emacs or Vim people that).
 
-**We recommend using [Atom](https://atom.io/) with [Nuclide](https://nuclide.io/) [Mac, Linux].**
 
-There are two other good:
+There are other good choices:
 
-1. [Atom](https://atom.io/) standalone [Mac, Linux, Windows]
+1. [Atom](https://atom.io/) standalone [Mac, Linux, Windows]  
+   **Some people like [Atom](https://atom.io/) with [Nuclide](https://nuclide.io/) [Mac, Linux].**
 1. [Sublime](https://www.sublimetext.com/) [Mac, Linux, Windows]
 
-Other editors you may want to consider:
-
-1. [TextWrangler](http://www.barebones.com/products/textwrangler/) [Mac]
+1. [BBEdit](https://www.barebones.com/products/bbedit/) - “free forever” unlicensed use, pay to unlock pro features [Mac]
 1. [Notepad++](https://notepad-plus-plus.org/) [Windows]
+
+----
+# EVERYTHING BELOW HERE IS DEPRECATED
+----
 
 ## Remote editing with Atom + Nuclide [Mac, Linux]
 
