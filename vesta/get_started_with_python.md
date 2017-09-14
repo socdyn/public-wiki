@@ -1,8 +1,8 @@
-###Getting started as a technical undergraduate research assistant in SDL
+### Getting started as a technical undergraduate research assistant in SDL
 
 Research at SDL relies on data that must be collected, transformed and analyzed. URAs with technical interests support these efforts.
 
-Members of the Social Dynamics Lab overwhelmingly embrace `Python` as the language of first choice. While we also use other tools like `R`, `Stata`, `C`, `Scala`, `Julia`, and `javascript` where appropriate, most projects are developed in Python. We maintain a python package ecosystem on our lab server, Vesta, for Python versions 2.7 and 3.5. Use Python 3.5 for new projects. For work on your own machine, we recommend that you use the Anaconda Python 3.5 distribution.
+Members of the Social Dynamics Lab overwhelmingly embrace `Python` as the language of first choice. While we also use other tools like `R`, `Stata`, `C`, `Scala`, `Julia`, and `javascript` where appropriate, most projects are developed in Python. We maintain a python package ecosystem on our lab server, Vesta, for Python versions 2.7 and 3.x. Use Python 3 for new projects. For work on your own machine, we recommend that you use the latest Anaconda Python 3.x distribution.
 
 Anaconda includes the Jupyter notebook server, which provides a cell-based interface to Python. If you don't already have a preferred development environment, Jupyter notebook (along with the `%qtconsole` command) is a good place to start. 
 
@@ -11,14 +11,13 @@ We use github to manage and share project related code. It is even more critical
 
 #### Install Python
 
-If you have not already done so, please install the Python 3.5 version of Anaconda for your platform from [www.continuum.io](https://www.continuum.io/downloads)
+If you have not already done so, please install the Python 3.x version of Anaconda for your platform from [www.continuum.io](https://www.continuum.io/downloads)
 
 #### Get a general purpose text processor
 
 You will benefit from a text processor for inspecting raw data. Here are a few suggestions:
 
-
-  1. MacOS: TextWrangler, Atom
+  1. MacOS: BBedit, Atom
   2. Linux: Atom
   3. Windows: Notepad++
 
