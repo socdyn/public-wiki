@@ -1,6 +1,6 @@
-#Use Screen to keep your session running when you disconnect from Vesta
+# Use Screen to keep your session running when you disconnect from Vesta
 
-###Keep your processes running even when you disconnect from Vesta and/or turn off your local machine
+### Keep your processes running even when you disconnect from Vesta and/or turn off your local machine
 from [howtogeek.com](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
 and [here](http://aperiodic.net/screen/quick_reference).
 
