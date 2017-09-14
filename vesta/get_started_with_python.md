@@ -21,7 +21,14 @@ You will benefit from a text processor for inspecting raw data. Here are a few s
   2. Linux: Atom
   3. Windows: Notepad++
 
-#### Review Python basics
+#### Review Python Basics
+
+Python has a very good tutorial [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/). Focus on sections: 
+
+  - 3. An Informal Introduction to Python 
+  - 4. More Control Flow Tools
+  - 5. Data Structures
+
 
 We encourage good python programming practice to improve readability and reduce errors. Please watch the idiomatic python video linked at [https://gist.github.com/JeffPaine/6213790
 ](https://gist.github.com/JeffPaine/6213790) and read the code examples. 
