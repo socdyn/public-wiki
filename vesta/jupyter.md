@@ -9,6 +9,58 @@ local machine.
 You can find out more about Jupyter Notebooks
 [here](http://jupyter.readthedocs.io/en/latest/index.html)
 
+#### We are not really supporting this but it works just fine if you get the port number correct. The chat transcript below descibes the process and serves as documentation pending a rewrite
+
+Christopher Cameron  
+[12:42] As far as ipython is concerned, you would need to use a custom port number.  
+The issue is that there does not seem to be good tools to automatically allocate port numbers and avoid conflicts
+[12:47] 
+ok, try this:  
+[12:47] 
+on **Vesta**, run `jupyter notebook --no-browser`  
+[12:48] 
+and watch for the line 
+`The Jupyter Notebook is running at: http://localhost:8888/?token=****`  
+[12:49] 
+that `localhost:xxxx` is the port number you need to forward and it will potentially change each time you start notebook on Vesta  
+[12:50] 
+also note the line:
+
+```
+Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=*****
+```
+
+[12:50] 
+copy and paste that URL with the token  
+[12:51] 
+Next, on **YOUR** computer:  
+[12:52] 
+`ssh  -f -N -L localhost:8888:localhost:xxxx netID@vesta.soc.cornell.edu`  
+
+[12:53] Where `xxxx` is the port number jupyter is using on Vesta.  
+[12:54] You might need to change `8888` if you already have jupyter running locally. 8895 worked for me.  
+
+[12:56 PM] _Finally_, Paste the **URL with token** from Vesta into your web browser. edit the port number in the URL to match the **first** port number you used in the `ssh` tunnel command
+
+
+Christopher Cameron  
+[1:12 PM] 
+that `-f` makes it a little troublesome as the port forwarding just hangs out in the background
+
+[1:13 PM] 
+run `ps aux | grep xxxx` with `xxxx` as the port forward to find the process numbers (second value on each line)  
+
+[1:14] then `kill zzz` where `zzz` is the process ID  
+
+[1:15] it is way more convenient (in my opinion) if you leave off the `-f` in the ssh command so it stays in the Terminal and you can `ctrl-C` to end it.  
+
+
+----
+### Older Stuff, Pending edit 
+----
+
 ## On Vesta:
 
 You must first open up Jupyter Notbooks in headless mode on the server using
