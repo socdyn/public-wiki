@@ -1,10 +1,10 @@
-##Working with data on the command line
+## Working with data on the command line
 from [data-on-the-command-line](http://www.datamazing.co.uk/2014/01/25/working-with-data-on-the-command-line#.UuZ-Bnn0D5c)  
 Date Sat 25 January 2014 `#tools`
 
 Full-blown computing environments like R and Python are great for analyzing a dataset in detail. But for quick and simple data inspection and manipulation, Unix command-line tools are incredibly efficient. In this post, I will highlight a few of the tools I find myself using on a daily basis. Hopefully you'll find a couple of new tools to add to your repertoire.  
 
-###Peeking at a file (head, tail, less)
+### Peeking at a file (head, tail, less)
 
 Let's start by downloading some sample web log data from NASA.
 `$ wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz`
@@ -20,7 +20,7 @@ burger.letters.com - - [01/Jul/1995:00:00:11 -0400] "GET /shuttle/countdown/lift
 199.120.110.21 - - [01/Jul/1995:00:00:11 -0400] "GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0" 200 4179
 ```
 
-###Filtering columns (awk, cut)
+### Filtering columns (awk, cut)
 
 It looks like the first column contains the (sub-)domains/IPs from where requests originated. Common tools that can be used to extract them include awk and cut.
 
@@ -72,7 +72,7 @@ $ gunzip -c NASA_access_log_Jul95.gz | egrep -v '^\d+\.\d+\.\d+\.\d+' | wc -l
  1471918
 ```
 
-###Sampling data (shuf, head)
+### Sampling data (shuf, head)
 
 Another common task is to draw a random sample of lines from a file. If the contents fit into memory, you can use shuf to shuffle the lines and pick a subset with head. (In OS X, you can get shuf by installingcoreutils. If you use Homebrew, you can brew install coreutils. Note that by default the installed tools will be prefixed with 'g' to avoid shadowing previously installed ones. Thus, shuf will be available as gshuf.)
 
@@ -85,7 +85,7 @@ eoi18.eda.mke.ab.com - - [05/Jul/1995:09:08:35 -0400] "GET /shuttle/countdown/co
 131.156.47.24 - - [05/Jul/1995:10:13:50 -0400] "GET /shuttle/missions/sts-71/mission-sts-71.html HTTP/1.0" 200 8192
 ```
 
-###Working with CSV files (csvtool)
+### Working with CSV files (csvtool)
 
 For the simplest cases, column -s, -t file.csv is a quick way to inspect a CSV (comma-separated values) file on the command line, but it gets cumbersome to handle cases such as missing values and values containing commas. There are lots of tools out there specifically designed to work with CSV files. Below I showcase csvtool.   
 
