@@ -37,7 +37,7 @@ copy and paste that URL with the token
 [12:51] 
 Next, on **YOUR** computer:  
 [12:52] 
-`ssh  -f -N -L localhost:8888:localhost:xxxx netID@vesta.soc.cornell.edu`  
+`ssh -N -L localhost:8888:localhost:xxxx netID@vesta.soc.cornell.edu`  
 
 [12:53] Where `xxxx` is the port number jupyter is using on Vesta.  
 [12:54] You might need to change `8888` if you already have jupyter running locally. 8895 worked for me.  
@@ -46,8 +46,7 @@ Next, on **YOUR** computer:
 
 
 Christopher Cameron  
-[1:12 PM] 
-that `-f` makes it a little troublesome as the port forwarding just hangs out in the background
+[1:12 PM] if you add `-f` to `ssh` command, it goes to the background. This makes it a little troublesome to quit as the port forwarding just hangs out in the background
 
 [1:13 PM] 
 run `ps aux | grep xxxx` with `xxxx` as the port forward to find the process numbers (second value on each line)  
