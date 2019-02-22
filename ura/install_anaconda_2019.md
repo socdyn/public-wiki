@@ -12,7 +12,7 @@ We use the Anaconda Python distribution in the lab. We use other languages too, 
 Once this is installed, follow your platform specific directions at [https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/](https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/)
 to install:
 
-`conda install regex plotnine seaborn jupyterlab networkx pip bokeh plotly chartify`  
+`conda install regex plotnine seaborn jupyterlab networkx pip bokeh plotly chartify nodejs`  
 then  
 `pip install sklearn`  
 
