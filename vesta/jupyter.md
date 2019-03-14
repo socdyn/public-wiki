@@ -56,6 +56,14 @@ run `ps aux | grep xxxx` with `xxxx` as the port forward to find the process num
 [1:15] it is way more convenient (in my opinion) if you leave off the `-f` in the ssh command so it stays in the Terminal and you can `ctrl-C` to end it.  
 
 
+## Using BitVise SSH Client:
+Go to the C2C tab, set the first port to whatever Vesta is running Jupyter on, and the second to whatever you want to connect to (I just use the same port). That's it.
+
+For some reason, token authentication stopped working when I did this, so I had to set up password access, which is easy:
+`jupyter notebook --gen-config
+jupyter notebook password`
+
+
 ----
 ### Older Stuff, Pending edit 
 ----
