@@ -7,13 +7,17 @@ We use the Anaconda Python distribution in the lab. We use other languages too, 
 ##### [1] Download and install the Python 3.7 version of Anaconda
 [https://www.anaconda.com/distribution/](https://www.anaconda.com/distribution/)
 
-`conda config --add channels conda-forge` 
-
 Once this is installed, follow your platform specific directions at [https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/](https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/)
 to install:
 
+These commands run in Terminal.app, the Linux shell or another unix-like command prompt (not in a python console)
+
+`conda config --add channels conda-forge` 
+
 `conda install regex plotnine seaborn jupyterlab networkx pip bokeh plotly chartify nodejs`  
+
 then  
+
 `pip install sklearn`  
 
 ##### [2] If you are working on Scenario A, install GIS tools. 
