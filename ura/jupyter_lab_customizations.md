@@ -1,7 +1,7 @@
 
 
 
-## To show all jupyter output, in a cell near the top of each notebook, execute this code: ##
+### To show all jupyter output, in a cell near the top of each notebook, execute this code: ###
 
 ```python
 # Print all output (implicitly print results that are not assigned to a name)
@@ -11,7 +11,7 @@ InteractiveShell.ast_node_interactivity = "all"
 
 ----
 
-## Open Jupyter Lab in Chrome app mode ##
+### Open Jupyter Lab in Chrome app mode ###
 from: http://christopherroach.com/articles/jupyterlab-desktop-app/
 
 Open `~/.jupyter/jupyter_notebook_config.py`. If the file does not exist, first run the Terminal command:
@@ -30,9 +30,9 @@ Look up to port and token from the jupyter server window and then use Terminal t
 
 
 
-## Jupyter lab extensions to consider: ##
+### Jupyter lab extensions to consider: ###
 
-### recommended ###
+#### recommended ####
 @jupyter-widgets/jupyterlab-manager
 The JupyterLab extension providing Jupyter widgets.
 
