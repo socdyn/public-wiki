@@ -17,7 +17,7 @@ The issue is that there does not seem to be good tools to automatically allocate
 [12:47] 
 ok, try this:  
 [12:47] 
-on **Vesta**, run `jupyter notebook --no-browser`  
+on **Vesta**, run `jupyter lab --no-browser`  ~`jupyter notebook --no-browser`~  
 [12:48] 
 and watch for the line 
 `The Jupyter Notebook is running at: http://localhost:8888/?token=****`  
