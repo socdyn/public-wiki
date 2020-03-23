@@ -15,4 +15,4 @@ nano    Nano's ANOther editor - free text editing program
 rm      Remove - remove directory entries
 rmdir   Remove Directory - remove directories
 
-See (https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/)[https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/]
+See [https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/](https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/)
