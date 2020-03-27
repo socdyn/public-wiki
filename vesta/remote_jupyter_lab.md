@@ -21,7 +21,7 @@ I put these in my `~/.zshrc` using `nano ~/.zshrc` or equivalent, then `source ~
 ```
 alias sdl3='ssh userid@sdl3.soc.cornell.edu'  
 
-sdl3_nb() { ssh -N -L "$1":localhost:"$2" userid@sdl3.soc.cornell.edu; }`
+sdl3_nb() { ssh -N -L "$1":localhost:"$2" userid@sdl3.soc.cornell.edu; }
 
 lab_appp() { /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app="http://localhost:""$1""/?token=""$2"";"; }
 ```
