@@ -21,7 +21,7 @@ I put these in my `~/.zshrc` using `nano ~/.zshrc` or equivalent, then `source ~
 ```
 alias sdl3='ssh userid@sdl3.soc.cornell.edu'  
 
-sdl3_nb() { ssh -N -L "$1":localhost:"$2" userid@sdl3.soc.cornell.edu; }`
+sdl3_nb() { ssh -N -L "$1":localhost:"$2" userid@sdl3.soc.cornell.edu; }
 
 lab_appp() { /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app="http://localhost:""$1""/?token=""$2"";"; }
 ```
@@ -134,3 +134,34 @@ As with step 2 above, that empty line means the terminal is actively doing the a
 ##### If you prefer NOT to use Chrome's app mode, do this INSTEAD of step 3 
 Take that URL from step one:  
 `http://localhost:RRRR/?token=8cadcb48aac8bfcaf2bf5bd07bb67538a863367cbbae6645` and substitute the local port number `LLLL` in place of `RRRR`. If you were able to set up the link with `RRRR` equal to `LLLL`, then you don't need to change it. You can paste the url with the correct local port number into your web browser address bar to load jupyter lab. 
+
+
+## Reconnect ##
+
+If the port forwarding (Tab 2) stops (as will happen when your computer sleeps or you change to a different network), you will get a `Broken pipe` message the terminal and see a "Server Connection Error" in the JupyterLab interface. In almost every case, the server is still running and your work is saved. Broken ssh links is the most common situation you will encounter. You usually do not need to repeat the "Tab 1" directions unless the server reboots and you only need to repeat the "Tab 3" step if you close your web browser. 
+
+You will see the following two signs that your port forwarding is broken: 
+
+In Terminal:
+
+```shell
+$ sdl3 LLLL RRRR
+packet_write_wait: Connection to 192.168.1.55 port 22: Broken pipe
+$
+```
+
+In the JupyterLab interface: 
+
+![Server Connection Error](disconnect_message.png)
+
+To resolve this, you need to restart the ssh link and then reconnect the notebook to the remoter kernel.  
+
+1. Following the **Terminal window or tab #2** directions above to restore the port forwarding (essentially, press the up arrow in Terminal to recall command history and rerun the `sdl3_nb` command).
+
+2. Click **Dismiss** on the *Server Connection Error* dialog. 
+
+3. Notice how the lower left of the Jupyter window shows "Python 3 | Disconnected". This is an indication that you need to reconnect to the remote kernel. Click on the word Python 3 in the lower left to open the "Select Kernel" menu. In almost every case, you should choose the option under the heading "Use Kernel from Preferred Session", which will be named after your current notebook. This kernel has all the variables and data that you previously loaded.
+
+4. If "Python 3 | Disconnected" does not change to "Python 3 | Idle" after you select a kernel, reload the browser window ("command+R" or "View > Reload this page", etc).  
+
+![Kernel Selection](kernel_select.png)
