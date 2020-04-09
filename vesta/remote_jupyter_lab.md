@@ -106,12 +106,12 @@ Link the remote port number from `localhost:RRRR` above and with some available 
 Open a second Terminal window or tab. At the prompt, use the `sdl_nb` function to link the ports:
 
 ```shell
-$ sdl3 LLLL RRRR
+$ sdl3_nb LLLL RRRR
 ```
 If nothing appears to happen, it worked! There should be no prompt at the bottom of the terminal, just a blank line. This means the link is open and it will stay open until this tab is closed. This step is done, so just leave that tab alone. If you close the tab, the port link will terminate and you will need to do this step again. 
 
 ```shell
-$ sdl3 LLLL RRRR
+$ sdl3_nb LLLL RRRR
 ▊
 ```
 
