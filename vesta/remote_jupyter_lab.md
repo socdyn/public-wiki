@@ -5,6 +5,11 @@ Folks that need access to SDL3 should get in touch with Chris Cameron / @chris o
 
 The process outlined below is how most of the SDL server users choose to work. We SSH into the server, start a jupyter lab server on the machine and then create an ssh tunnel to connect the jupyter remote port to a local port. Finally, we direct our web browser to connect to that local port with the proper token so the jupyter lab interface loads in our local browser. It looks like a lot of work because I provided a lot of detail. In practice, I have the 3 Terminal/iTerm tabs open all the time and I use the up arrow to scroll the recent command history to find the commands I need. About 98% of the work is the initial screen setup and jupyter config. The rest is, shall we say... _history_. (up arrow through command history).
 
+The diagram below identifies the major elements of the setup. You use the first ssh connection to start the jupyter server on the remote machine and connect to that server via the SSH Tunnel. 
+
+![Conceptual Diagram](remote_jupyter_schematic_diagram.png)
+
+
 ## Setup
 
 I define an alias and two functions in my local `~/.zshrc` to help smooth this process. If you are using bash, the syntax is nearly the same. (you may need to add additional lines to `export -f` the new functions (ask Amruta).
