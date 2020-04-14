@@ -4,9 +4,6 @@
 
 [learning python](https://www.linkedin.com/learning/learning-python-2?u=76816458)
 
-[learning-linux-command-line](https://www.linkedin.com/learning/learning-linux-command-line-2/learning-linux-command-line?u=76816458)
-
-[unix-for-mac-os-x-users](https://www.linkedin.com/learning/unix-for-mac-os-x-users/introduction?u=76816458)
 
 ### Intermediate
 
@@ -19,3 +16,12 @@
 [data-visualization](https://www.linkedin.com/learning/python-for-data-visualization/effectively-present-data-with-python?u=76816458)
 
 [data-science-tips-tricks](https://www.linkedin.com/learning/python-for-data-science-tips-tricks-techniques?u=76816458)
+
+
+### Other Tools
+
+[geogebra.org - online 3D mathematical graphing tool](https://www.geogebra.org/classic)
+
+[learning-linux-command-line](https://www.linkedin.com/learning/learning-linux-command-line-2/learning-linux-command-line?u=76816458)
+
+[unix-for-mac-os-x-users](https://www.linkedin.com/learning/unix-for-mac-os-x-users/introduction?u=76816458)
