@@ -1,4 +1,4 @@
-# Remote jupyter lab with three shells
+# Remote jupyter lab via ssh
 
 Folks that need access to SDL3 should get in touch with Chris Cameron / @chris on Slack /  cjc73@cornell.edu. I will need a preferred `username` and your RSA 4096b public key (~/.ssh/id_rsa.pub) after you [generate an ssh key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). *Note: there is a risk of overwriting an existing key, so verify that id\_rsa does not already exist.*
 
