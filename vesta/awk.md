@@ -1,4 +1,4 @@
-#Using awk to break up large sim files for analysis
+# Using awk to break up large sim files for analysis
 
 Simulation makes it easy to generate huge files that cannot be opened by regular programs. To get around this, you must break the file into smaller parts. One approach might be the separate the cases into files based on combinations of parameters (next time, have the simulation code do this automatically!)
 
