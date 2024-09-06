@@ -72,3 +72,21 @@ window you are currently located in.
 Last but not least, you should get familiar with using `man specific-command` in the terminal. This gives you detailed information of all the installed commands available in bash.
 For instance, if you write `man screen` you will see a brief description of the command and all the command-line options along with other useful information. This
 is EXTREMELY helpful.
+
+**Customize your screen**
+
+Put this in ~/.screenrc on the remote server:
+
+```
+#termcapinfo xterm* ti@:te@
+autodetach on # Autodetach session on hangup instead of terminating screen completely
+startup_message off # Turn off the splash screen
+defscrollback 30000 # Use a 30000-line scrollback buffer
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+```
+
+
+
+
